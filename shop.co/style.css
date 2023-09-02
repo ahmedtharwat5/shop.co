@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.close{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 6px 100px;
+}
+.close span {
+    font-size: 12px;
+    text-decoration: underline;
+}
+/* nav-bar */
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 999;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.left-nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+        color: #000000;
+}
+.logo h3 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+}
+.middle-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.middle-nav input {
+    position: relative;
+    outline: none;
+    background-color: #F0F0F0;
+    border: none;
+    width: 300px;
+    padding: 7px 0 7px 15px;
+    border-radius: 13px;
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* hero-page */
+.herop-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/home1.png);
+    background-size: contain;
+    overflow: hidden;
+}
+.hero-page-text {
+    width: 40%;
+    margin: 100px;
+}
+.hero-page-text h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.details p {
+    padding: 10px 0 20px 0;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 15px;
+    line-height: 22px;
+}
+.details button {
+    border: none;
+    background-color: #000000;
+    border-radius: 17px;
+    color: #FFF;
+    padding: 9px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.number-details{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.number h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
+.number p {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 15px;
+}
+
+.brands {
+    background-color: #000000;
+}
+.brands-img {
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* arrivals & top selling*/
+.arrivals{
+    width: 90%;
+    margin: 50px auto;
+}
+.arrivals-tittle{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.arrivals-cards{
+   display: flex;
+   justify-content: space-between;   
+   padding-bottom: 60px;
+}
+.arrivals-cards-details h3 {
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 7px;
+    padding-top: 12px;
+}
+.arrivals-cards-details h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.moo {
+    border-radius: 8px;
+}
+.price{
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+.sale{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.sale span {
+    color: rgba(0, 0, 0, 0.40);
+    text-decoration: line-through;
+}
+.btn-viewall {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.arrivals button {
+    border: 1px solid rgba(0, 0, 0, 0.10);    background-color: transparent;
+    border-radius: 17px;
+    color: #000000;
+    padding: 9px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.arrivals button:hover{
+    transition: all .4s linear;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+/* dress-style */
+.style-container {
+    background-color: #F0F0F0;
+    border-radius: 16px;
+}
+.style {
+    width: 91%;
+    margin: 70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.style-img {
+    position: relative;
+}
+.style-img img {
+    width: 100%;
+    border-radius: 7px;
+}
+.style-img h3 {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+/* customer */
+.customer {
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+}
+.our-customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50PX;
+}
+.our-customer h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.happy-customer {
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.review-customer {
+    padding: 20px;
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 7px;
+}
+.review-customer:hover {
+    transition: all .4s linear;
+    background-color: rgba(0, 0, 0, 0.10);
+    color: #03774b;
+}
+.review-customer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #00000099;
+}
+.true {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.true h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+/* email */
+.email {
+    background-color: #000000;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.offers{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-text {
+    width: 45%;
+}
+.left-text h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFF;
+}
+.right-input {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-input input {
+    width: 60%;
+    outline: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 13px;
+    font-size: 14px;
+}
+.new {
+    text-align: center;
+}
+/* footer */
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+}
+.fotter-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+.footer-details p {
+    padding: 15px 0;
+    font-size: 14px;
+    color: #00000099;
+    line-height: 23px;
+}
+.footer-details h3 {
+    font-size: 18px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.footer-details ul li {
+    padding-bottom: 15px;
+    color: #00000099;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-details ul li:hover {
+    color: #000000c4;
+    transition: all .4s linear;
+}
+hr {
+    opacity: .5;
+}
+.end-footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
